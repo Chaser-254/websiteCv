@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(12, 11, 11);
+        }
+
+        .header {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+        .profile-section {
+            padding: 30px;
+            text-align: center;
+          }
+      
+          .profile-section h2 {
+            color: black;
+            font-size: 24px;
+          }
+      
+          .profile-section p {
+            color: gray;
+            font-size: 16px;
+          }
+          
+
+        h2 {
+            text-align: center;
+            color: white;
+            font-size: 20px;
+        }
+        .profile-section img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 20px 0;
+          }
+      
+          .profile-section a {
+            display: inline-block;
+            padding: 8px 20px;
+            background-color: green;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+          }
+          .profile-section a:hover {
+            background-color: darkgreen;
+          }
+        .logo {
+            display: block;
+            margin: 0 auto;
+            width: 150px;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 25px;
+        }
+
+        .navbar {
+            display: flex;
+            color: black;
+        }
+
+        .navbar a {
+            color: #f4f2f2;
+            text-decoration: none;
+            padding: 10px;
+            font-size: 15px;
+        }
+        .navbar.active {
+            display: flexbox;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+          }
+
+        .navbar a.active {
+            color: white;
+        }
+
+        .navbar a:hover {
+            color: aquamarine;
+        }
+
+        .menu-icon {
+            display: none;
+            color: white;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+        .contact {
+            background-color: #0c0b0b;
+            padding: 30px 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .contact h2 span {
+            color: #f0eded;
+        }
+
+        .contact-icons {
+            margin-top: 20px;
+        }
+
+        .contact-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 40px;
+            color: green;
+            transition: color 0.3s ease;
+            text-decoration: none;
+        }
+
+        .contact-icons a:hover {
+            color: darkgreen;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 16px;
+            color: rgb(10, 10, 10);
+        }
+
+        .contact-info p {
+            margin-bottom: 10px;
+            color: rgb(255, 252, 252);
+            text-decoration: none;
+        }
+
+        .contact-info p span {
+            font-weight: bold;
+            color: rgb(253, 250, 250);
+            text-decoration: none;
+        }
+
+        .footer {
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-size: 16px;
+            margin-top: 280px;
+            border: 8px solid rgb(26, 26, 26);
+            border-radius: 50px;
+        }
+
+        .footer p {
+            margin: 0;
+            color: rgb(245, 242, 242);
+        }
+        @media only screen and (max-width: 768px) {
+            .services-box {
+                width: 100%;
+                margin: 10px;
+                max-width: none;
+            }
+
+            .header {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .menu-icon {
+                display: block;
+                padding-left: 350px;
+                font-size: 20px;
+                margin-bottom: 40px;
+            }
+
+            .navbar {
+                display: none;
+            }
+
+            .navbar.active {
+                display: flex;
+                flex-direction:row;
+                align-items: right;
+                margin-top: 20px;
+            }
+        }
+
+        @media only screen and (min-width: 768px) and (max-width: 1200px) {
+            .services-box {
+                width: calc(50% - 40px);
+                max-width: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h2>
+            <img class="logo" src="/images/about3.jpg" alt="Logo">
+            Emmanuel Erogo Esibitar
+        </h2>
+        <div class="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav class="navbar">
+            <a href="landing.html" class="active">Home</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="https://eu.docworkspace.com/d/cILqZ8aOoAbr4kaMG"><i class="fas fa-user"></i></a>
+        </nav>
+    </header>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <div class="contact-icons">
+            <a href="https://wa.me/254758714775" target="_blank"><img src="/images/whatsapp_4494494.png" alt=""
+                style="width: 30px; border-radius: 10px;">
+            <a href="mailto:esibitaremmanuel@gmail.com" target="_blank"><img src="/images/gmail_5968534.png" alt="" 
+                style="width: 30px; border-radius: 10px;">
+            <a href="https://www.facebook.com/" target="_blank"><img src="/images/facebook_5968764.png" alt="" 
+                style="width: 30px; border-radius: 10px;">
+            <a href="https://www.instagram.com/" target="_blank"><img src="/images/instagram_1409946.png" alt="" 
+                style="width: 30px; border-radius: 10px;">
+            <a href="https://www.twitter.com/" target="_blank"><img src="/images/twitter_1384065.png" alt="" 
+                style="width: 30px; border-radius: 10px;">
+            <a href="https://www.linkedin.com/" target="_blank"><img src="/images/linkedin_145807.png" alt="" 
+                style="width: 30px; border-radius: 10px;">
+        </div>
+
+        <div class="contact-info">
+            <p >Need to collaborate with me?</p>
+            <p>I would be more than happy to work with you.</p>
+            <p>I am Open to any FullStack Developer work.</p>
+            <p>
+                Location: <span>Turkana County, Nauros <br> Turkana Central, Kenya.</span>
+            </p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>&copy; 2021 Emmanuel Erogo | All Rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuIcon = document.querySelector(".menu-icon");
+        const navbar = document.querySelector(".navbar");
+
+        menuIcon.addEventListener("click", () => {
+            navbar.classList.toggle("active");
+        });
+    </script>
+</body>
+
+</html>
